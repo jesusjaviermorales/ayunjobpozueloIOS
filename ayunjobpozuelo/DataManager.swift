@@ -15,8 +15,22 @@ let urlAyuntamientos = "http://www.ayunjob.com/myphp/rest/mobile/getayuntamiento
 
 let TopAppURL = "http://www.ayunjob.com/myphp/rest/mobile/getofertas.php?from=20150112&to20150212&filterbyfield1=ayuntamientos_id&value1=1"
 
+let urlEmpresas = "http://www.ayunjob.com/myphp/rest/mobile/getempresas.php?id_ayuntamiento=1"
+
 
 class DataManager {
+    
+    
+    class func getEmpresasWithSuccess(success: ((iTunesData: NSData!) -> Void)) {
+        //1
+        loadDataFromURL(NSURL(string: urlEmpresas)!, completion:{(data, error) -> Void in
+            //2
+            if let urlData = data {
+                //3
+                success(iTunesData: urlData)
+            }
+        })
+    }
     
     
     class func getAyuntamietosWithSuccess(success: ((iTunesData: NSData!) -> Void)) {

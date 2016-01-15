@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B102BED51C466A4700705522 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B102BED41C466A4700705522 /* WebViewController.swift */; };
+		B102BED71C4792D900705522 /* EmpresasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B102BED61C4792D900705522 /* EmpresasController.swift */; };
+		B102BED91C47965600705522 /* Empresa.swift in Sources */ = {isa = PBXBuildFile; fileRef = B102BED81C47965600705522 /* Empresa.swift */; };
+		B102BEDB1C47A01300705522 /* InfomacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B102BEDA1C47A01300705522 /* InfomacionController.swift */; };
 		B13F31551A9E24E70056C068 /* Oferta.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F31541A9E24E70056C068 /* Oferta.swift */; };
 		B13F31571A9E36AC0056C068 /* DetalleOfertaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F31561A9E36AB0056C068 /* DetalleOfertaController.swift */; };
 		B13F31591A9F17E90056C068 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F31581A9F17E90056C068 /* ImageLoader.swift */; };
@@ -14,6 +18,8 @@
 		B13F315D1A9F2F8C0056C068 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F315C1A9F2F8C0056C068 /* DataManager.swift */; };
 		B13F315F1AA067F10056C068 /* DetalleAyuntamientoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F315E1AA067F10056C068 /* DetalleAyuntamientoController.swift */; };
 		B13F31611AA073B70056C068 /* Ayuntamiento.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F31601AA073B70056C068 /* Ayuntamiento.swift */; };
+		B17DE5361C48EEC100D9F1CF /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17DE5341C48EEC100D9F1CF /* InstructionView.swift */; };
+		B17DE5371C48EEC100D9F1CF /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17DE5351C48EEC100D9F1CF /* TutorialViewController.swift */; };
 		B1C19BCF1A9DC22F00182F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C19BCE1A9DC22F00182F08 /* AppDelegate.swift */; };
 		B1C19BD11A9DC22F00182F08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C19BD01A9DC22F00182F08 /* ViewController.swift */; };
 		B1C19BD41A9DC22F00182F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C19BD21A9DC22F00182F08 /* Main.storyboard */; };
@@ -35,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B102BED41C466A4700705522 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		B102BED61C4792D900705522 /* EmpresasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmpresasController.swift; sourceTree = "<group>"; };
+		B102BED81C47965600705522 /* Empresa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Empresa.swift; sourceTree = "<group>"; };
+		B102BEDA1C47A01300705522 /* InfomacionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfomacionController.swift; sourceTree = "<group>"; };
 		B13F31541A9E24E70056C068 /* Oferta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oferta.swift; sourceTree = "<group>"; };
 		B13F31561A9E36AB0056C068 /* DetalleOfertaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Detalle\U0010OfertaController.swift"; sourceTree = "<group>"; };
 		B13F31581A9F17E90056C068 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
@@ -42,6 +52,8 @@
 		B13F315C1A9F2F8C0056C068 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B13F315E1AA067F10056C068 /* DetalleAyuntamientoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleAyuntamientoController.swift; sourceTree = "<group>"; };
 		B13F31601AA073B70056C068 /* Ayuntamiento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ayuntamiento.swift; sourceTree = "<group>"; };
+		B17DE5341C48EEC100D9F1CF /* InstructionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
+		B17DE5351C48EEC100D9F1CF /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		B1C19BC91A9DC22F00182F08 /* ayunjobpozuelo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayunjobpozuelo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C19BCD1A9DC22F00182F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1C19BCE1A9DC22F00182F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,11 +107,15 @@
 		B1C19BCB1A9DC22F00182F08 /* ayunjobpozuelo */ = {
 			isa = PBXGroup;
 			children = (
+				B17DE5341C48EEC100D9F1CF /* InstructionView.swift */,
+				B17DE5351C48EEC100D9F1CF /* TutorialViewController.swift */,
 				B13F315C1A9F2F8C0056C068 /* DataManager.swift */,
 				B1C19BF01A9DCEFD00182F08 /* OfertasController.swift */,
+				B102BED61C4792D900705522 /* EmpresasController.swift */,
 				B13F31561A9E36AB0056C068 /* DetalleOfertaController.swift */,
 				B1C19BCE1A9DC22F00182F08 /* AppDelegate.swift */,
 				B1C19BD01A9DC22F00182F08 /* ViewController.swift */,
+				B102BEDA1C47A01300705522 /* InfomacionController.swift */,
 				B1C19BD21A9DC22F00182F08 /* Main.storyboard */,
 				B1C19BD51A9DC22F00182F08 /* Images.xcassets */,
 				B1C19BD71A9DC22F00182F08 /* LaunchScreen.xib */,
@@ -110,6 +126,8 @@
 				B13F31581A9F17E90056C068 /* ImageLoader.swift */,
 				B13F315A1A9F27D10056C068 /* SwiftyJSON.swift */,
 				B13F315E1AA067F10056C068 /* DetalleAyuntamientoController.swift */,
+				B102BED41C466A4700705522 /* WebViewController.swift */,
+				B102BED81C47965600705522 /* Empresa.swift */,
 			);
 			path = ayunjobpozuelo;
 			sourceTree = "<group>";
@@ -244,12 +262,18 @@
 				B1C19BF31A9DEAD500182F08 /* OfertaCell.swift in Sources */,
 				B1C19BD11A9DC22F00182F08 /* ViewController.swift in Sources */,
 				B13F315B1A9F27D10056C068 /* SwiftyJSON.swift in Sources */,
+				B102BED91C47965600705522 /* Empresa.swift in Sources */,
 				B1C19BCF1A9DC22F00182F08 /* AppDelegate.swift in Sources */,
 				B13F31571A9E36AC0056C068 /* DetalleOfertaController.swift in Sources */,
+				B102BED51C466A4700705522 /* WebViewController.swift in Sources */,
 				B13F31611AA073B70056C068 /* Ayuntamiento.swift in Sources */,
+				B102BED71C4792D900705522 /* EmpresasController.swift in Sources */,
 				B1C19BF11A9DCEFD00182F08 /* OfertasController.swift in Sources */,
 				B13F315D1A9F2F8C0056C068 /* DataManager.swift in Sources */,
+				B17DE5371C48EEC100D9F1CF /* TutorialViewController.swift in Sources */,
+				B17DE5361C48EEC100D9F1CF /* InstructionView.swift in Sources */,
 				B13F31551A9E24E70056C068 /* Oferta.swift in Sources */,
+				B102BEDB1C47A01300705522 /* InfomacionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

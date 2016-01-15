@@ -10,9 +10,16 @@ import UIKit
 
 var ayuntamientos = [Ayuntamiento]()
 var ofertas = [Oferta]()
+var empresas = [Empresa]()
 
 
 class ViewController: UIViewController {
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        self.navigationController?.navigationBarHidden = false
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,9 +57,7 @@ class ViewController: UIViewController {
             
         }
 
-        
-        
-        
+     
       
         DataManager.getTopAppsDataFromItunesWithSuccess { (iTunesData) -> Void in
             let json = JSON(data: iTunesData)
@@ -96,6 +101,33 @@ class ViewController: UIViewController {
                 
             }
             
+        }
+        
+        
+        
+        DataManager.getEmpresasWithSuccess { (iTunesData) -> Void in
+            let json = JSON(data: iTunesData)
+         /*   if let appName = json[0]["titulo"].string {
+                println("NSURLSession: \(appName)")
+            }
+          */  
+            let appArray = json.array
+            
+            for (key: String, subJson: JSON) in json {
+                
+                var idEmpresas_colaboradoras: String = subJson["idEmpresas_colaboradoras"].stringValue
+                var descripcion: String = subJson["descripcion"].stringValue
+                var nombre_empresa: String = subJson["nombre_empresa"].stringValue
+                var URL_imagen_empresa: String = subJson["URL imagen_empresa"].stringValue
+                
+                
+                var empresa = Empresa(idEmpresas_colaboradoras: idEmpresas_colaboradoras,
+                    descripcion: descripcion,
+                    nombre_empresa: nombre_empresa,
+                    URL_imagen_empresa: URL_imagen_empresa)
+                
+                empresas.append(empresa)
+            }
         }
         
     }
