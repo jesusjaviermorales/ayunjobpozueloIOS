@@ -29,6 +29,8 @@ class DetalleOfertaController: UIViewController {
         texto.text = oferta?.descripcion_oferta
         fecha.text = oferta?.fecha_publicacion_oferta
         
+        self.navigationController?.navigationItem.backBarButtonItem?.title = "Volver"
+        
     }
     
     override func didReceiveMemoryWarning() {

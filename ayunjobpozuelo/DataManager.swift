@@ -17,8 +17,73 @@ let TopAppURL = "http://www.ayunjob.com/myphp/rest/mobile/getofertas.php?from=20
 
 let urlEmpresas = "http://www.ayunjob.com/myphp/rest/mobile/getempresas.php?id_ayuntamiento=1"
 
+var urlLogin = "http://www.ayunjob.com/myphp/rest/mobile/getuser.php?filterbyfield1=usuario&filterbyfield2=contrasena&value1=username&value2=pass"
+
+var urlAlertas = "http://www.ayunjob.com/myphp/rest/mobile/getAlertas.php?filterbyfield1=alertas&value1=username"
+
+var urlOfertasByAlertas = "http://www.ayunjob.com/myphp/rest/mobile/getOfertasByAlertas.php?filterbyfield1=alertas&value1=@"
+
+var urlSetAlertas = "http://www.ayunjob.com/myphp/rest/mobile/setAlertas.php?filterbyfield1=usuario&filterbyfield2=alertas&value1=username&value2=namealerta"
 
 class DataManager {
+    
+    class func generateLoginString(user1: NSString, pass1: NSString) -> Void {
+        
+        let replaced = (urlLogin as NSString).stringByReplacingOccurrencesOfString("username", withString: user1)
+        
+         urlLogin = (replaced as NSString).stringByReplacingOccurrencesOfString("pass", withString: pass1)
+        
+    }
+    
+    class func generateURLAlertasString(user1: NSString) -> Void {
+        urlAlertas = (urlAlertas as NSString).stringByReplacingOccurrencesOfString("username", withString: user1)
+    }
+    
+    
+    class func getAlertasWithSuccess(success: ((iTunesData: NSData!) -> Void)) {
+        //1
+        loadDataFromURL(NSURL(string: urlAlertas)!, completion:{(data, error) -> Void in
+            //2
+            if let urlData = data {
+                //3
+                success(iTunesData: urlData)
+            }
+        })
+    }
+    
+    class func getLoginWithSuccess(success: ((iTunesData: NSData!) -> Void)) {
+        //1
+        loadDataFromURL(NSURL(string: urlLogin)!, completion:{(data, error) -> Void in
+            //2
+            if let urlData = data {
+                //3
+                success(iTunesData: urlData)
+            }
+        })
+    }
+    
+    
+    class func generateUrltoAddAlert(user1: NSString, alertaText: NSString) -> Void {
+        
+        let replaced = (urlSetAlertas as NSString).stringByReplacingOccurrencesOfString("username", withString: user1)
+        
+        urlSetAlertas = (replaced as NSString).stringByReplacingOccurrencesOfString("namealerta", withString: alertaText.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)
+        
+     //   NSLog(urlSetAlertas)
+    }
+    
+    class func setAlertasWithSuccess(success: ((iTunesData: NSData!) -> Void)) {
+        //1
+        loadDataFromURL(NSURL(string: urlSetAlertas)!, completion:{(data, error) -> Void in
+            //2
+            if let urlData = data {
+                //3
+                success(iTunesData: urlData)
+            }
+        })
+    }
+
+
     
     
     class func getEmpresasWithSuccess(success: ((iTunesData: NSData!) -> Void)) {
@@ -43,6 +108,23 @@ class DataManager {
             }
         })
     }
+    
+    class func generateURLOfertasByAlertasString(filtro: NSString) -> Void {
+        urlOfertasByAlertas = (urlOfertasByAlertas as NSString).stringByReplacingOccurrencesOfString("@", withString: filtro.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)
+    }
+    
+    
+    class func getOfertasByAlertasWithSuccess(success: ((iTunesData: NSData!) -> Void)) {
+        //1
+        loadDataFromURL(NSURL(string: urlOfertasByAlertas)!, completion:{(data, error) -> Void in
+            //2
+            if let urlData = data {
+                //3
+                success(iTunesData: urlData)
+            }
+        })
+    }
+
 
     
   

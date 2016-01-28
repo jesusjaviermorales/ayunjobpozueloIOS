@@ -16,6 +16,8 @@ class InformacionController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         
         self.navigationController?.navigationBarHidden = false
+        
+ //       self.navigationController?.navigationItem.leftBarButtonItem?.title = "Volver"
     }
     
     
@@ -61,6 +63,15 @@ class InformacionController: UIViewController {
             yourVC.urlToOpen = "http://www.pozuelodealarcon.org/index.asp?MP=1&MS=1487&MN=4";
             
             //  yourVC.objectOnYourVC = setObjectValueHere!
+            
+        }
+        
+        
+        if(segueID! == "ayuntamiento"){
+            
+           // self.performSegueWithIdentifier(segueID, sender: nil)
+            
+          // segue.destinationViewController
             
         }
         

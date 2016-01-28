@@ -6,22 +6,29 @@
 //  Copyright (c) 2015 avansis. All rights reserved.
 //
 import UIKit
-import Foundation
+
 import MessageUI
 
 class DetalleAyuntamientoController: UIViewController, MFMailComposeViewControllerDelegate {
     
     var seleccionAyuntamiento = Ayuntamiento();
     
-    @IBOutlet weak var telefono1: UIButton!
+    @IBOutlet var telf1: UIButton!
+  
+    @IBOutlet var telf2: UIButton!
+   // @IBOutlet weak var telefono1: UIButton!
     
-    @IBOutlet weak var telefono2: UIButton!
-    
+//    @IBOutlet weak var telefono2: UIButton!
+ 
     @IBOutlet weak var mail: UIButton!
     
     @IBOutlet weak var texto: UILabel!
     
     
+    @IBAction func Close(sender: AnyObject) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,11 +43,13 @@ class DetalleAyuntamientoController: UIViewController, MFMailComposeViewControll
              }
         }
         
-        telefono1.setTitle(seleccionAyuntamiento.telefono, forState: UIControlState.Normal)
-        telefono2.setTitle(seleccionAyuntamiento.telefono_agencia_colocacion, forState: UIControlState.Normal)
+        telf1.setTitle(seleccionAyuntamiento.telefono, forState: UIControlState.Normal)
+        telf2.setTitle(seleccionAyuntamiento.telefono_agencia_colocacion, forState: UIControlState.Normal)
         mail.setTitle(seleccionAyuntamiento.correo_electronico, forState: UIControlState.Normal)
         texto.text = seleccionAyuntamiento.descripcion
         
+        
+        self.navigationController?.navigationItem.backBarButtonItem?.title = "Volver"
     
         
     }

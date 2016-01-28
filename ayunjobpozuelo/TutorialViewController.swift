@@ -8,8 +8,8 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource
   var pageImages : Array<String> = ["1_tutorial_encuentra.png", "2_tutorial_busca.png", "3_tutorial_alertas.png",
     "4_tutorial_inscríbete.png",
     "5_tutorial_info.png",
-    "6_tutorial_empresas.png",
-    ""]
+    "6_tutorial_empresas.png"
+    ]
     
   var currentIndex : Int = 0
   
@@ -33,11 +33,11 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource
     
     let button = UIButton.buttonWithType(UIButtonType.System) as UIButton
     //button.frame = CGRectMake(20, view.frame.height - 110, view.frame.width - 40, 50)
-    button.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
+    button.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.7)
+    button.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
     
     
-    
-    button.frame =  CGRectMake(0, view.frame.height - 40.0, 80, 40)
+    button.frame =  CGRectMake(50, view.frame.height - 80, view.frame.width - 100, 40)
     
     button.setTitle("Volver", forState: UIControlState.Normal)
     button.addTarget(self, action: "pressBackbutton", forControlEvents: UIControlEvents.TouchUpInside)
@@ -70,28 +70,28 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource
   {
     var index = (viewController as InstructionView).pageIndex
     
-    if index >= 7
-    {
+    //if index >= 6
+ /*   {
         self.navigationController?.popViewControllerAnimated(true)
     }
-    
+   */
     index++
     
-   // if (index == self.pageImages.count) {
-  //    return nil
-  //  }
+    if (index == self.pageImages.count) {
+      return nil
+   }
     
     return viewControllerAtIndex(index)
   }
   
   func viewControllerAtIndex(index: Int) -> InstructionView?
   {
-    if index >= 7
+ /*   if index >= 6
     {
       self.navigationController?.popViewControllerAnimated(true)
         return nil
    
-    }else{
+    }else{*/
         
         
     
@@ -104,7 +104,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource
     currentIndex = index
     
         return pageContentViewController
-        }
+   //     }
         
     
   }

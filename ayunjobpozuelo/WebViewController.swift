@@ -14,8 +14,20 @@ class WebViewController: UIViewController {
     
     var urlToOpen: String!
   
+    @IBAction func Close(sender: AnyObject) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
    
-   
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = false
+        
+        let nav = self.navigationController?.navigationBar
+        //self.title = "Volver"
+       // self.navigationController?.navigationItem.backBarButtonItem?.title = "Volver"
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +35,8 @@ class WebViewController: UIViewController {
         let url: NSURL? = NSURL (string: urlToOpen);
         let requestObj = NSURLRequest(URL: url!);
         web.loadRequest(requestObj);
+        
+       
     }
     
     override func didReceiveMemoryWarning() {

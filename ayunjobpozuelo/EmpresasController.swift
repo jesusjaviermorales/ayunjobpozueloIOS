@@ -15,13 +15,16 @@ class EmpresasController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var btnFilter: UIButton!
     
     var players: [Empresa] = empresas
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         
+        
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -35,6 +38,8 @@ class EmpresasController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return players.count
     }
+    
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
@@ -58,6 +63,14 @@ class EmpresasController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        cell.layer.transform = CATransform3DMakeScale(0.1,0.1,1)
+        UIView.animateWithDuration(0.25, animations: {
+            cell.layer.transform = CATransform3DMakeScale(1,1,1)
+        })
     }
     
     

@@ -18,8 +18,13 @@
 		B13F315D1A9F2F8C0056C068 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F315C1A9F2F8C0056C068 /* DataManager.swift */; };
 		B13F315F1AA067F10056C068 /* DetalleAyuntamientoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F315E1AA067F10056C068 /* DetalleAyuntamientoController.swift */; };
 		B13F31611AA073B70056C068 /* Ayuntamiento.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F31601AA073B70056C068 /* Ayuntamiento.swift */; };
+		B1640FC51C4E518900BB6FFC /* AlertaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1640FC41C4E518900BB6FFC /* AlertaCell.swift */; };
+		B1640FC71C4E8A1700BB6FFC /* OfertasByAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1640FC61C4E8A1700BB6FFC /* OfertasByAlertController.swift */; };
 		B17DE5361C48EEC100D9F1CF /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17DE5341C48EEC100D9F1CF /* InstructionView.swift */; };
 		B17DE5371C48EEC100D9F1CF /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17DE5351C48EEC100D9F1CF /* TutorialViewController.swift */; };
+		B17DE5391C493C5B00D9F1CF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17DE5381C493C5B00D9F1CF /* LoginController.swift */; };
+		B17DE53B1C4E2ED600D9F1CF /* AlertasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17DE53A1C4E2ED600D9F1CF /* AlertasController.swift */; };
+		B17DE53D1C4E42DF00D9F1CF /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17DE53C1C4E42DF00D9F1CF /* Alerta.swift */; };
 		B1C19BCF1A9DC22F00182F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C19BCE1A9DC22F00182F08 /* AppDelegate.swift */; };
 		B1C19BD11A9DC22F00182F08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C19BD01A9DC22F00182F08 /* ViewController.swift */; };
 		B1C19BD41A9DC22F00182F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C19BD21A9DC22F00182F08 /* Main.storyboard */; };
@@ -52,8 +57,13 @@
 		B13F315C1A9F2F8C0056C068 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B13F315E1AA067F10056C068 /* DetalleAyuntamientoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleAyuntamientoController.swift; sourceTree = "<group>"; };
 		B13F31601AA073B70056C068 /* Ayuntamiento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ayuntamiento.swift; sourceTree = "<group>"; };
+		B1640FC41C4E518900BB6FFC /* AlertaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertaCell.swift; sourceTree = "<group>"; };
+		B1640FC61C4E8A1700BB6FFC /* OfertasByAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfertasByAlertController.swift; sourceTree = "<group>"; };
 		B17DE5341C48EEC100D9F1CF /* InstructionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		B17DE5351C48EEC100D9F1CF /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		B17DE5381C493C5B00D9F1CF /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B17DE53A1C4E2ED600D9F1CF /* AlertasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertasController.swift; sourceTree = "<group>"; };
+		B17DE53C1C4E42DF00D9F1CF /* Alerta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
 		B1C19BC91A9DC22F00182F08 /* ayunjobpozuelo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ayunjobpozuelo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C19BCD1A9DC22F00182F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1C19BCE1A9DC22F00182F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,18 +126,23 @@
 				B1C19BCE1A9DC22F00182F08 /* AppDelegate.swift */,
 				B1C19BD01A9DC22F00182F08 /* ViewController.swift */,
 				B102BEDA1C47A01300705522 /* InfomacionController.swift */,
+				B17DE53A1C4E2ED600D9F1CF /* AlertasController.swift */,
 				B1C19BD21A9DC22F00182F08 /* Main.storyboard */,
 				B1C19BD51A9DC22F00182F08 /* Images.xcassets */,
 				B1C19BD71A9DC22F00182F08 /* LaunchScreen.xib */,
 				B1C19BCC1A9DC22F00182F08 /* Supporting Files */,
 				B1C19BF21A9DEAD500182F08 /* OfertaCell.swift */,
+				B1640FC41C4E518900BB6FFC /* AlertaCell.swift */,
 				B13F31541A9E24E70056C068 /* Oferta.swift */,
+				B17DE53C1C4E42DF00D9F1CF /* Alerta.swift */,
 				B13F31601AA073B70056C068 /* Ayuntamiento.swift */,
 				B13F31581A9F17E90056C068 /* ImageLoader.swift */,
 				B13F315A1A9F27D10056C068 /* SwiftyJSON.swift */,
 				B13F315E1AA067F10056C068 /* DetalleAyuntamientoController.swift */,
 				B102BED41C466A4700705522 /* WebViewController.swift */,
 				B102BED81C47965600705522 /* Empresa.swift */,
+				B17DE5381C493C5B00D9F1CF /* LoginController.swift */,
+				B1640FC61C4E8A1700BB6FFC /* OfertasByAlertController.swift */,
 			);
 			path = ayunjobpozuelo;
 			sourceTree = "<group>";
@@ -261,15 +276,20 @@
 				B13F315F1AA067F10056C068 /* DetalleAyuntamientoController.swift in Sources */,
 				B1C19BF31A9DEAD500182F08 /* OfertaCell.swift in Sources */,
 				B1C19BD11A9DC22F00182F08 /* ViewController.swift in Sources */,
+				B1640FC51C4E518900BB6FFC /* AlertaCell.swift in Sources */,
 				B13F315B1A9F27D10056C068 /* SwiftyJSON.swift in Sources */,
 				B102BED91C47965600705522 /* Empresa.swift in Sources */,
 				B1C19BCF1A9DC22F00182F08 /* AppDelegate.swift in Sources */,
 				B13F31571A9E36AC0056C068 /* DetalleOfertaController.swift in Sources */,
+				B17DE53D1C4E42DF00D9F1CF /* Alerta.swift in Sources */,
 				B102BED51C466A4700705522 /* WebViewController.swift in Sources */,
 				B13F31611AA073B70056C068 /* Ayuntamiento.swift in Sources */,
+				B1640FC71C4E8A1700BB6FFC /* OfertasByAlertController.swift in Sources */,
 				B102BED71C4792D900705522 /* EmpresasController.swift in Sources */,
 				B1C19BF11A9DCEFD00182F08 /* OfertasController.swift in Sources */,
 				B13F315D1A9F2F8C0056C068 /* DataManager.swift in Sources */,
+				B17DE5391C493C5B00D9F1CF /* LoginController.swift in Sources */,
+				B17DE53B1C4E2ED600D9F1CF /* AlertasController.swift in Sources */,
 				B17DE5371C48EEC100D9F1CF /* TutorialViewController.swift in Sources */,
 				B17DE5361C48EEC100D9F1CF /* InstructionView.swift in Sources */,
 				B13F31551A9E24E70056C068 /* Oferta.swift in Sources */,
